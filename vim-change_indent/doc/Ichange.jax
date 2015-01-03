@@ -1,0 +1,65 @@
+*Ichange.txt*	行頭のインデントを変更する
+
+Version: 1.0
+Author : Michihiro Okada <olux.888@gmail.com>
+License: VIM LICENSE
+
+==============================================================================
+目次						*Ichange-contents*
+
+概要				|Ichange-introduction|
+インターフェース		|Ichange-interface|
+  コマンド			  |Ichange-commands|
+  関数				  |Ichange-functions|
+  キーマッピング		  |Ichange-key-mappings|
+更新履歴			|Ichange-changelog|
+
+
+
+==============================================================================
+概要						*Ichange-introduction*
+
+*Ichange.vim* は、行頭のインデントを変更するスクリプトです。
+|:IchangeSet| 、|:IchangeSetBefore| 、|:IchangeSetAfter| コマンドで
+変更前のインデント値、変更後のインデント値を設定後、
+|:Ichange| コマンドを実行することで"カレントバッファに対して"
+"変更前"のインデントから"変更後"のインデントに変更します。
+
+要件:
+- Vim 7.0 以降
+
+最新版:
+https://github.com/vim-jp/vim-Ichange
+
+
+
+==============================================================================
+インターフェース				*Ichange-interface*
+
+------------------------------------------------------------------------------
+コマンド					*Ichange-commands*
+
+:Ichange
+	BeforeのインデントからAfterのインデントに変更する
+:IchangeSet beforenum afternum
+	Beforeのインデント値、Afterのインデント値を設定する
+:IchangeSetBefore num
+	Beforeのインデント値を設定する
+:IchangeSetAfter num
+	Afterのインデント値を設定する
+
+------------------------------------------------------------------------------
+関数						*Ichange-functions*
+
+
+
+==============================================================================
+更新履歴					*Ichange-changelog*
+
+1.0	2015-01-04
+	- 初版。
+
+
+
+==============================================================================
+
