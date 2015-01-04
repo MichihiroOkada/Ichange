@@ -52,12 +52,25 @@ https://github.com/vim-jp/vim-Ichange
 関数						*Ichange-functions*
 
 
+------------------------------------------------------------------------------
+キーマッピング					*Ichange-key-mappings*
+
+<Plug>(change_indent)				*<Plug>(change_indent)*
+	|:Ichange| を実行します。
+
+{lhs}			{rhs}
+--------		-----------------------------
+<Leader>sw		<Plug>(change_indent)
+
+
+
 
 ==============================================================================
 更新履歴					*Ichange-changelog*
 
 1.0	2015-01-04
 	- 初版。
+
 
 
 
