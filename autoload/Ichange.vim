@@ -20,7 +20,9 @@ endif
 function! s:replace(file, start, end)
     let s:lineno = a:start
     let s:line = getline(s:lineno) 
-    while strlen(s:line) > 0
+
+    "while strlen(s:line) > 0
+    while 1
         let s:i = 0
         let s:len = strlen(s:line)
         let s:spacecount = 0
